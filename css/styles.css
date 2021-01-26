@@ -1,0 +1,25 @@
+table {
+  border-color: #c4dcf3;
+  border-collapse: collapse;
+  padding: 2rem;
+}
+.hero {
+  font-weight: bold;
+  color: white;
+  background-color: #427fef;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #eef7ff;
+}
+
+.box {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 2rem;
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  border-radius: 10px;
+  box-shadow: 10px 10px lightgrey;
+}

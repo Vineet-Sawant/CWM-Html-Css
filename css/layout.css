@@ -1,0 +1,141 @@
+/* .boxes {
+  border: 3px solid lightgrey;
+  position: relative;
+}
+
+.box {
+  width: 5rem;
+  height: 5rem;
+}
+
+.box-one {
+  background-color: gold;
+}
+.box-two {
+  background-color: tomato;
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+}
+.box-three {
+  background-color: dodgerblue;
+} */
+
+/*Floating Box*/
+
+/* .avatar {
+  width: 5rem;
+  height: 5rem;
+  background-color: gold;
+  float: left;
+  margin-right: 0.5rem;
+}
+.tweet {
+  border: 3px solid lightgrey;
+  overflow: ato;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.clear {
+  clear: both;
+} */
+
+/* Flex-Box  */
+/* .container {
+  border: 3px solid lightgrey;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  height: 90vh;
+} */
+
+/* .box {
+  flex-basis: 5rem;
+  flex-grow: 1;  */
+/*Allows to grow  and take the spaces*/
+/* width: 5rem;
+  height: 5rem;
+  background-color: gold;
+  margin: 1rem;
+} */
+
+/* .box-one {
+  flex-grow: 2;
+  align-self: flex-start;
+} */
+
+/* 
+Grid */
+
+/* .container {
+  display: grid; */
+/*3 X 2*/
+/* grid-template-rows: 100px 100px 100px;
+  grid-template-columns: repeat(2, 100px); */
+/* grid-template: repeat(3, 100px) / 30fr 70fr;
+  border: 3px solid lightgrey;
+  justify-items: ;
+  align-items: center;
+  height: 100vh;
+  gap: 10px 20px;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    ". footer";
+} */
+
+/* .box { */
+/* width: 5rem; */
+/* height: 5rem;
+  background-color: gold;
+}
+
+.box-one {
+  grid-area: header;
+}
+
+.box-four {
+  grid-area: footer;
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  background-color: gold;
+  padding: 1rem;
+}
+
+.box:nth-of-type(2) {
+  background-color: dodgerblue;
+}
+
+@media screen and (min-width: 622px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .box {
+    background-color: white;
+  }
+}
+
+@media print {
+  body {
+    font-size: 12pt;
+  }
+}
